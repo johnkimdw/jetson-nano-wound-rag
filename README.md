@@ -1,7 +1,5 @@
-# jetson-nano-wound-rag
-RAG system for an NVIDIA Jetson Nano for better wound classification.
-
-
+# jetson-nano-wound-aids
+NVIDIA Jetson Nano-based project for wound identification and RAG-based first-aid suggestions.
 
 # initial setup
 1. uv sync (to download all packages + .venv)
