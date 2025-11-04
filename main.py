@@ -1,5 +1,15 @@
+import os
+import logging
+import warnings
+from dotenv import load_dotenv
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
+load_dotenv()
+
+# Suppress warnings and reduce logging
+warnings.filterwarnings("ignore")
+logging.getLogger().setLevel(logging.ERROR)
 
 # 1. Configure local embedding model (small and efficient)
 Settings.embed_model = HuggingFaceEmbedding(
